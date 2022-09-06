@@ -23,6 +23,8 @@ jobs:
         sudo gem install asciidoctor-diagram
         sudo gem install asciidoctor-bibtex
         sudo gem install asciidoctor-mathematical
+        sudo gem install coderay
+
       
     - name: Build
       run: make
