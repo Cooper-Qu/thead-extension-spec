@@ -20,7 +20,9 @@ jobs:
         sudo apt install nodejs asciidoctor npm
         sudo gem install asciidoctor
         sudo gem install asciidoctor-pdf
+        sudo gem install asciidoctor-diagram
+        sudo gem install asciidoctor-bibtex
       
-    - name: Install dependencies
+    - name: Build
       run: make
 
