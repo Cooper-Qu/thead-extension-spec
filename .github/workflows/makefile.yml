@@ -18,8 +18,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt install nodejs asciidoctor npm
-        gem install asciidoctor
-        gem install asciidoctor-pdf
+        sudo gem install asciidoctor
+        sudo gem install asciidoctor-pdf
       
     - name: Install dependencies
       run: make
