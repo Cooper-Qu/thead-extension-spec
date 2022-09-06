@@ -22,6 +22,7 @@ jobs:
         sudo gem install asciidoctor-pdf
         sudo gem install asciidoctor-diagram
         sudo gem install asciidoctor-bibtex
+        sudo gem install asciidoctor-mathematical
       
     - name: Build
       run: make
