@@ -17,7 +17,7 @@ jobs:
     - name: Install Ubuntu packages
       run: |
         sudo apt-get update
-        sudo apt install nodejs build-base npm ruby make ruby-dev git asciidoctor curl
+        sudo apt install nodejs  npm ruby make ruby-dev asciidoctor
         sudo gem install asciidoctor
         sudo gem install asciidoctor-pdf
         sudo gem install asciidoctor-diagram
