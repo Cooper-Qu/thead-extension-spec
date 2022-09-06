@@ -24,6 +24,9 @@ jobs:
         sudo gem install asciidoctor-bibtex
         sudo gem install asciidoctor-mathematical
         sudo gem install coderay
+        npm i npm@latest -g
+        npm install wavedrom-cli
+        export PATH="$PATH:node_modules/.bin/"
 
       
     - name: Build
