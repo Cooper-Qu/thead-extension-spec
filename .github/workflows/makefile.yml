@@ -24,7 +24,17 @@ jobs:
 
     - name: Install Ubuntu packages
       run: |
-        sudo apt-get update
+        apt-get update
+        apt-get install -y npm make asciidoctor libpango1.0-dev
+        gem install asciidoctor
+        gem install asciidoctor-pdf
+        gem install asciidoctor-diagram
+        gem install asciidoctor-bibtex
+        gem install asciidoctor-mathematical
+        gem install coderay
+        npm i npm@latest -g
+        npm install wavedrom-cli
+        export PATH="$PATH:node_modules/.bin/"
 
     - name: Build
       run: make
