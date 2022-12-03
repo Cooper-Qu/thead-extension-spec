@@ -38,6 +38,7 @@ jobs:
       with:
         path: |
           *.pdf
+        name: package
 
   upload-release:
     runs-on: ubuntu-latest
