@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v3
 
     - name: Install Ubuntu packages
       run: |
@@ -34,7 +34,7 @@ jobs:
       run: make
 
     - name: Upload PDF
-      uses: actions/upload-artifact@main
+      uses: actions/upload-artifact@v3
       with:
         path: |
           *.pdf
@@ -47,12 +47,12 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@main
+        uses: actions/download-artifact@v3
         with:
           name: artifact
 
       - name: Upload release asset
-        uses: actions/upload-release-asset@main
+        uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
