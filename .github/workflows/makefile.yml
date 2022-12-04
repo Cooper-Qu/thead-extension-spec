@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@main
 
     - name: Install Ubuntu packages
       run: |
@@ -34,7 +34,7 @@ jobs:
       run: make
 
     - name: Upload PDF
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@main
       with:
         path: |
           *.pdf
