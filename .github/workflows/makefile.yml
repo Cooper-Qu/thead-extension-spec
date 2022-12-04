@@ -38,7 +38,7 @@ jobs:
       with:
         path: |
           *.pdf
-        content_type: application/zip
+        content_type: application/pdf
 
   upload-release:
     runs-on: ubuntu-latest
